@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seonghun - Web Portfolio: Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+</head>
+<body>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/58248012?s=400&u=97c4c07f9279faa37b2caa5e9bf046bd3c852d07&v=4" id="profile" alt="Github Profile">
+        <h1>Seonghun Park</h1>
+        <p><span><i class="bi bi-mortarboard-fill"></i> SeoulTech Univ.</span><span><i class="bi bi-geo-alt-fill"></i> SEOUL, SOUTH KOREA</span><span><i class="bi bi-telephone-fill"></i> 010-8678-8760</span></p>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <section class="col-md-11">
+                <h2><i class="bi bi-cast"></i> Projects</h2>
+                <p>Project so far</p>
+                <article>
+                    <h3 id="nu">NU Short Term Program</h3>
+                    <p class="time">January 2024 — Feburary 2024</p>
+                    <div class="container">
+                        <img class="project-logo" src="../static/img/northumbria-logo.png" alt="Northumbria Logo" width="96px">
+                        <p>During a short-term program at the University of Northumbria, I conducted a project on transparent object localization, which lasted for two weeks. Utilizing PyTorch, I personally developed the model, incorporating the core idea of ResNet into the U-Net architecture and implementing it simply. While the evaluation wasn't outstanding, I gained insights into internal computational processes by addressing issues such as dimension mismatches during model development, which I hadn't been familiar with previously. As a result, I achieved the top position in the short-term project.</p>
+                    </div>
+                </article>
+                <article>
+                    <h3 id="mycanvas">MyCanvas</h3>
+                    <p class="time">September 2023 - December 2023</p>
+                    <div class="container">
+                        <img class="project-logo" src="../static/img/mycanvas-logo.png" alt="MyCanvas Project Logo">
+                        <p>This project was conducted during the Data Structures course in my sophomore year, where we created a simple drawing application. The project involved implementing functionalities such as drawing lines, triangles, rectangles, circles, as well as features like color changing, grouping, shape color modification, undo & redo, save & load. In this project, I designed the rough relationships between the objects (ERD) and provided direction for my team members based on the proposed framework.</p>
+                    </div>
+                </article>
+                <article>
+                    <h3 id="iccv">ICCV 2023 DFAD</h3>
+                    <p class="time">September 2023 — October 2023</p>
+                    <div class="container">
+                        <img class="project-logo" src="../static/img/elsa-logo.svg" alt="Elsa Benchmark Challenge">
+                        <p>ELSA's Deep Fake Detection is a project aimed at distinguishing between fake and real images due to the vast data generation of generative AI. It was initiated to seize opportunities for presentations at conferences and personal growth. Leveraging Docker and Jupyter Notebook in a Linux server environment, approximately 1.5 million fake and real images were processed. However, the training process was significantly slow. This challenge was overcome by utilizing pytorch's amp.</p>
+                    </div>
+                </article>
+                <article>
+                    <h3 id="woowacourse">Woowacourse Pre-course</h3>
+                    <p class="time">November 2022 - December 2022</p>
+                    <div class="container">
+                        <img class="project-logo" src="../static/img/woowacourse-logo.png" alt="Woowa Course">
+                        <p>Woowacourse Pre-course is a preliminary test conducted to assess eligibility for participating in the Woowacourse regular curriculum. This test requires a deep understanding of Java and involves solving three problems structured in the Test-Driven Development (TDD) approach. Each problem involves creating games related to baseball, bridge, and lotto. I collaborated with professionals and other individuals experienced in Java to solve the problems and share our approaches. Throughout the process, I familiarized myself with package naming conventions for package separation, function name snippets for collaboration, and core features of Object-Oriented Programming (OOP).</p>
+                    </div>
+                </article>
+            </section>
+            <aside class="col-md-1">
+                <div id="aside-nav">
+                    <a class="btn-shape" href="#nu"><i class="bi bi-1-circle"></i></a>
+                    <a class="btn-shape" href="#iccv"><i class="bi bi-2-circle"></i></a>
+                    <a class="btn-shape" href="#mycanvas"><i class="bi bi-3-circle"></i></a>
+                    <a class="btn-shape" href="#woowacourse"><i class="bi bi-4-circle"></i></a>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-9" id="footer-detail">
+                <span><b>Created by</b> Seonghun Park<br><b>Contact</b> seonghun120614@gmail.com</span>
+                <p>&copy; 2024 <a href="mailto:seonghun120614@gmail.com?subject=[Ref. Web Portfolio]">Seonghun Park</a>. All Rights Reserved.</p>
+            </div>
+            <nav class="col-md-3">
+                <ul>
+                    <li><a href="https://github.com/seonghun120614"><i class="bi bi-github"></i></a></li>
+                    <li><a href="mailto:seonghun120614@gmail.com?subject=[Ref. Web Portfolio]"><i class="bi bi-google"></i></a></li>
+                    <li><a href="https://seonghun120614.tistory.com/"><i class="bi bi-chat-left-quote-fill"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

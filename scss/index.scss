@@ -1,0 +1,100 @@
+$base_font: 1rem;
+$base_unit: 160px;
+
+main div {
+    position: relative;
+
+    section {
+        padding-top: $base_unit * 0.2;
+        font-size: $base_font * 1.2;
+
+        p {margin-top: $base_unit * 0.1;}
+        p::before {
+            content: " ";
+            white-space: pre;
+        }
+
+        article {
+            margin-top: $base_unit * 0.2;
+            h4 {
+                margin-top: $base_unit * 0.1;
+                font-size: $base_font * 1.1;
+                font-weight: bolder;
+            }
+            p {
+                font-size: $base_font * 1.1;
+            }
+            .time {
+                margin-top: $base_unit * 0.05;
+                color: #808080;
+                font-size: $base_font * 1.1;
+            }
+            .time::before {
+                content: "";
+            }
+            ul, li {
+                all: initial;
+            }
+            ul > li {
+                padding-top: $base_unit * 0.05;
+                margin-left: $base_unit * 0.2;
+                font-size: $base_font;
+                font-weight: lighter;
+                display: list-item;
+            }
+        }
+    }
+
+    aside {
+        padding: 40vh;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    }
+}
+
+
+// aside nav
+$btn_width: 30px;
+$btn_height: 30px;
+$btn_margin: 5px;
+$btn_highlight: #599468;
+
+$aside_nav_padding: 10px;
+$aside_nav_width: 40px;
+$aside_nav_height: $btn_height * 3 + $btn_margin * 4 + $aside_nav_padding * 2;
+
+#aside-nav {
+    width: $aside_nav_width;
+    height: $aside_nav_height;
+    border-radius: $aside_nav_width * 0.5;
+    padding: $aside_nav_padding 0;
+    background-color: whitesmoke;
+    box-shadow: 0 0 5px white;
+
+    .btn-shape {
+        display: grid;
+        place-items: center;
+        background-color: white;
+        padding-top: 1px;       // Add for center
+        color: white;
+        width: $btn_width;
+        height: $btn_height;
+        border-radius: $btn_width * 0.5;
+        margin: $btn_margin;
+        transition: background 0.3s ease-out,
+            transform 0.3s linear;
+    }
+    .btn-shape:hover {
+        background-color: $btn_highlight;
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    main div aside {height: 0;}
+    #aside-nav {
+        height: 0;
+        display: none;
+    }
+}

@@ -1,0 +1,86 @@
+main div {
+  position: relative;
+}
+main div section {
+  padding-top: 32px;
+  font-size: 1.2rem;
+}
+main div section p {
+  margin-top: 16px;
+}
+main div section p::before {
+  content: " ";
+  white-space: pre;
+}
+main div section article {
+  margin-top: 32px;
+}
+main div section article h4 {
+  margin-top: 16px;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+main div section article p {
+  font-size: 1.1rem;
+}
+main div section article .time {
+  margin-top: 8px;
+  color: #808080;
+  font-size: 1.1rem;
+}
+main div section article .time::before {
+  content: "";
+}
+main div section article ul, main div section article li {
+  all: initial;
+}
+main div section article ul > li {
+  padding-top: 8px;
+  margin-left: 32px;
+  font-size: 1rem;
+  font-weight: lighter;
+  display: list-item;
+}
+main div aside {
+  padding: 40vh;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+#aside-nav {
+  width: 40px;
+  height: 130px;
+  border-radius: 20px;
+  padding: 10px 0;
+  background-color: whitesmoke;
+  box-shadow: 0 0 5px white;
+}
+#aside-nav .btn-shape {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  padding-top: 1px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 5px;
+  transition: background 0.3s ease-out, transform 0.3s linear;
+}
+#aside-nav .btn-shape:hover {
+  background-color: #599468;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 680px) {
+  main div aside {
+    height: 0;
+  }
+  #aside-nav {
+    height: 0;
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

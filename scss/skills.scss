@@ -1,0 +1,85 @@
+$base_font: 1rem;
+$base_unit: 160px;
+$progress_background_color: rgba(#808080, 0.3);
+$progress_color: rgba(0, 0, 0, 0.8);
+
+
+main {
+    position: relative;
+
+    section {
+        padding: $base_unit * 0.2 $base_unit * 0.1;
+        font-size: $base_font * 1.2;
+
+        p {margin-top: $base_unit * 0.1;}
+        p::before {
+            content: " ";
+            white-space: pre;
+        }
+
+        table {
+            padding-top: $base_unit * 0.1;
+            font-size: $base_font;
+            width: 100%;
+            thead tr td {
+                font-weight: 600;
+            }
+            tr {
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: 2px 2px 2px #808080;
+                td:nth-child(1) {text-align:center;}
+                td:nth-child(2) {
+                    width: 70%;
+                    progress {
+                        padding-right: 100%;
+                        width: 100%;
+                        appearance: none;
+                        background-color: transparent;
+                        animation: progressAnimation 1s ease-out forwards;
+                    }
+                    progress::-webkit-progress-bar {
+                        background-color: $progress_background_color;
+                        border-radius: 5px;
+                        height: 10px;
+                        overflow: hidden;
+                    }
+                    progress::-webkit-progress-value {
+                        background-color: $progress_color;
+                        height: 10px;
+                    }
+                    span::after {
+                        content: attr(value);
+                    }
+                }
+                td:nth-child(3){text-align:center;}
+                td{
+                    padding-top: $base_unit * 0.1;
+                    padding-bottom: $base_unit * 0.1;;
+                }
+            }
+        }
+        img {height: 48px;}
+    }
+}
+
+@keyframes progressAnimation {
+    0% {
+        padding-right: 100%;
+    }
+    100% {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section p {
+        font-size: $base_font;
+    }
+}
+
+@media (max-width: 420px) {
+    section p {
+        font-size: $base_font * 0.8;
+    }
+}

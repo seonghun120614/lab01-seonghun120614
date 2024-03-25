@@ -1,0 +1,82 @@
+main div {
+  position: relative;
+}
+main div section {
+  padding-top: 32px;
+  font-size: 1.2rem;
+}
+main div section p {
+  margin-top: 16px;
+}
+main div section p::before {
+  content: " ";
+  white-space: pre;
+}
+main div section article {
+  margin-top: 32px;
+}
+main div section article h4 {
+  margin-top: 16px;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+main div section article p {
+  margin-top: 0;
+  margin-left: 16px;
+  font-size: 1.1rem;
+}
+main div section article .time {
+  margin-top: 8px;
+  color: #808080;
+  font-size: 1.1rem;
+}
+main div section article .time::before {
+  content: "";
+}
+main div section article .container {
+  margin-top: 16px;
+  display: flex;
+}
+main div section article .container .project-logo {
+  width: 196px;
+  height: 196px;
+}
+main div aside {
+  padding: 40vh;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+#aside-nav {
+  width: 40px;
+  height: 165px;
+  border-radius: 20px;
+  padding: 10px 0;
+  background-color: whitesmoke;
+  box-shadow: 0 0 5px white;
+}
+#aside-nav .btn-shape {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  padding-top: 1px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 5px;
+  transition: background 0.3s ease-out, transform 0.3s linear;
+}
+#aside-nav .btn-shape:hover {
+  background-color: #599468;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 880px) {
+  .project-logo {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=portfolio.css.map */

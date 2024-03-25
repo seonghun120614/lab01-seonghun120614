@@ -1,0 +1,64 @@
+$base_unit: 160px;
+$base_font: 1rem;
+
+
+main {
+    position: relative;
+
+    section {
+        padding: $base_unit * 0.2 $base_unit * 0.1;
+        font-size: $base_font * 1.2;
+    }
+
+    aside {
+        position: absolute;
+        top: $base_unit;
+        right: 0;
+        i {
+            font-size: $base_font * 9;
+        }
+    }
+}
+
+#letter {
+    font-size: $base_font * 1.1;
+
+    label {
+        font-weight: bolder;
+    }
+
+    input, textarea {
+        width: $base_unit * 3;
+        font-size: $base_font * 1.1;
+        border-style: none;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 3px #808080;
+    }
+
+    input {height: $base_font * 1.5;}
+
+    button {
+        width: $base_unit * 0.5;
+        font-size: $base_font * 1.1;
+        border-style: none;
+        box-shadow: 2px 2px 3px #808080;
+    }
+    button:hover {
+        color: white;
+        background-color: black;
+        border-radius: 3px;
+    }
+}
+
+// Teblet & Phone
+@media screen and (max-width: 1120px) {
+    main aside i {
+        display: none;
+    }
+    #letter {
+        input, textarea {
+            width: 100%;
+        }
+    }
+}

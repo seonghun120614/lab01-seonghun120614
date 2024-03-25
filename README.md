@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ooZJb8PN)
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Seoultech_LOGO.png" width=100 ></p>
 
 Lab Assignment #1 -- HTML and CSS
@@ -26,3 +27,63 @@ This project allows exploration of basic web development while emphasizing desig
 2. You should activate the Github Pages functionality so your website will be public (although your repository is private). 
 
 3. The root directory of the project repository should contain a short screencast with audio (maximum 3 minutes) navigating your website, demonstrating responsiveness and showing the main elements that you used.
+===
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Folder Structure](#folder-structure)
+- [Features](#feature)
+- [Usage](#usage)
+- [License](#license)
+
+## Introduction
+
+This is a website designed to showcase my personal portfolio and demonstrate my skills in web development.
+
+## Folder Structure
+
+```
+project/
+│
+├── index.html
+│
+├── docs/
+│   ├── contact.html
+│   ├── portfolio.html
+│   └── skills.html
+│
+├── css/
+│   ├── skills.css
+│   ├── contact.css
+│   ├── index.css
+│   ├── portfolio.css
+│   └── style.css
+│
+├── scss/
+│   ├── skills.scss
+│   ├── contact.scss
+│   ├── index.scss
+│   ├── portfolio.scss
+│   └── style.scss
+│
+└── static/
+    │
+    ├── fonts/
+    │   └── ...
+    │
+    └── images/
+        └── ...
+```
+
+## Feature
+
+1. Styling: Using SCSS to reduce code lines and colorful design
+2. Responsiveness: Accessible from all devices(desktops, mobile devices, tablets, and more).
+
+## Usage
+
+- SCSS(upgraded version of Sass): Use typing "source watch_sass.sh" in terminal to compile stylesheet.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.

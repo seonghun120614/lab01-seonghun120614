@@ -1,0 +1,84 @@
+main {
+  position: relative;
+}
+main section {
+  padding: 32px 16px;
+  font-size: 1.2rem;
+}
+main section p {
+  margin-top: 16px;
+}
+main section p::before {
+  content: " ";
+  white-space: pre;
+}
+main section table {
+  padding-top: 16px;
+  font-size: 1rem;
+  width: 100%;
+}
+main section table thead tr td {
+  font-weight: 600;
+}
+main section table tr {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px #808080;
+}
+main section table tr td:nth-child(1) {
+  text-align: center;
+}
+main section table tr td:nth-child(2) {
+  width: 70%;
+}
+main section table tr td:nth-child(2) progress {
+  padding-right: 100%;
+  width: 100%;
+  appearance: none;
+  background-color: transparent;
+  animation: progressAnimation 1s ease-out forwards;
+}
+main section table tr td:nth-child(2) progress::-webkit-progress-bar {
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 5px;
+  height: 10px;
+  overflow: hidden;
+}
+main section table tr td:nth-child(2) progress::-webkit-progress-value {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 10px;
+}
+main section table tr td:nth-child(2) span::after {
+  content: attr(value);
+}
+main section table tr td:nth-child(3) {
+  text-align: center;
+}
+main section table tr td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+main section img {
+  height: 48px;
+}
+
+@keyframes progressAnimation {
+  0% {
+    padding-right: 100%;
+  }
+  100% {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  section p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  section p {
+    font-size: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=skills.css.map */

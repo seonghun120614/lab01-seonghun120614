@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seonghun - Web Portfolio: Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/58248012?s=400&u=97c4c07f9279faa37b2caa5e9bf046bd3c852d07&v=4" id="profile" alt="Github Profile">
+        <h1>Seonghun Park</h1>
+        <p><span><i class="bi bi-mortarboard-fill"></i> SeoulTech Univ.</span><span><i class="bi bi-geo-alt-fill"></i> SEOUL, SOUTH KOREA</span><span><i class="bi bi-telephone-fill"></i> 010-8678-8760</span></p>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2><i class="bi bi-envelope-at-fill"></i> Mail</h2>
+            <div id="letter">
+                <form action="#" method="POST" onsubmit="return false;">
+                    <label for="title">Title</label><br>
+                    <input type="text" id="title" name="title"><br><br>
+                    <label for="content">Message</label><br>
+                    <textarea name="message" id="message" cols="50" rows="10"></textarea><br>
+                    <button id="showMessageBoxBtn">Send</button>
+                </form>
+            </div>
+        </section>
+        <aside>
+            <i class="bi bi-arrow-right"></i>
+            <i class="bi bi-mailbox-flag"></i>
+        </aside>
+    </main>
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-9" id="footer-detail">
+                <span><b>Created by</b> Seonghun Park<br><b>Contact</b> seonghun120614@gmail.com</span>
+                <p>&copy; 2024 <a href="mailto:seonghun120614@gmail.com?subject=[Ref. Web Portfolio]">Seonghun Park</a>. All Rights Reserved.</p>
+            </div>
+            <nav class="col-md-3">
+                <ul>
+                    <li><a href="https://github.com/seonghun120614"><i class="bi bi-github"></i></a></li>
+                    <li><a href="mailto:seonghun120614@gmail.com?subject=[Ref. Web Portfolio]"><i class="bi bi-google"></i></a></li>
+                    <li><a href="https://seonghun120614.tistory.com/"><i class="bi bi-chat-left-quote-fill"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("showMessageBoxBtn").addEventListener("click", function() {
+            alert("Under development.");
+        });
+    </script>
+</body>
+</html>
